@@ -6,12 +6,12 @@ export const day1_2 = new class {
         this.result = this.data
             .split('\n')
             .map(element => parseInt(element))
-            .map(this.reducer)
+            .map(this.mapper)
             .reduce(day1_1.reducer, 0);
         console.log(`day1_2: ${this.result}`);
     }
 
-    reducer(element, index, array){
+    mapper(element, index, array){
         return array[index] + array[index + 1] + array[index + 2]
     }
 }
