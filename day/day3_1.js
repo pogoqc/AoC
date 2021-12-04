@@ -20,7 +20,7 @@ export const day3_1 = new class {
     }
 
     mostCommonBit(value){
-        return value.split('1').length > value.split('0').length
+        return value.split('1').length >= value.split('0').length
     }
 
     xor(binaryValue){
