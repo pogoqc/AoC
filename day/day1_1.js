@@ -2,7 +2,6 @@ export const day1_1 = new class {
     async log(){
         this.data = await global.functions.loadData('./data/day1.txt');
         this.result = this.data
-            .split('\n')
             .map(element => parseInt(element))
             .reduce(this.reducer, 0);
         console.log(`day1_1: ${this.result}`);

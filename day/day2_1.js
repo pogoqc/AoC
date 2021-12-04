@@ -21,9 +21,7 @@ export const day2_1 = new class {
     async log(){
         this.data = await global.functions.loadData('./data/day2.txt');
         this.data
-            .split('\n')
-            .filter(obj => obj)
-            .forEach(obj => day2_1.mapping[day2_1.getString(obj)](obj));
+            .forEach(value => day2_1.mapping[day2_1.getString(value)](value));
         console.log(`day2_1: ${day2_1.position.depth * day2_1.position.horizontal}`);
     }
 

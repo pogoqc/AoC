@@ -1,8 +1,11 @@
 window.global = {
     functions: {
         loadData: async (filename) => {
-            const response = await fetch(filename);
-            return await response.text();
-        }
+            let response = await fetch(filename);
+            response = await response.text();
+            return response
+                .split('\n')
+                .filter(Boolean)
+        },
     }
 }
