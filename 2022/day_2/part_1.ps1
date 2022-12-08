@@ -1,5 +1,5 @@
 $EncryptedStrategyGuide = @{ A = 1; B = 2; C = 3; X = 1; Y = 2; Z = 3; }
-$GameStateWins = @{ X = "C"; Y = "A"; Z = "B"; }
+$GameStateWins = @{ Z = "B"; X = "C"; Y = "A"; }
 
 $Data = Get-Content "$( $PSScriptRoot )/input.txt"
 $Data | ForEach-Object {

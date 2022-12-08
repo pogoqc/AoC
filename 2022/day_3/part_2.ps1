@@ -1,0 +1,1 @@
+$Data = Get-Content "$( $PSScriptRoot )/input.txt"
